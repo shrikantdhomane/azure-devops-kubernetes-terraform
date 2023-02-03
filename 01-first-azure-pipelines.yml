@@ -24,3 +24,9 @@ jobs:
   steps:
   - script: echo job2  Hello, world changed!
     displayName: 'Run a one-line script'
+
+- job: job3
+  dependsOn: job2
+  steps:
+  - script: echo job3  Hello, world changed!
+    displayName: 'Run a one-line script'
